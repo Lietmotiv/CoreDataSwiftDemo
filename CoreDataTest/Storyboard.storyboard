@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xxp-Py-8wZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--Vc Main-->
+        <scene sceneID="elR-vO-vV9">
+            <objects>
+                <viewController id="Xxp-Py-8wZ" customClass="vcMain" customModule="CoreDataTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o39-Pu-HAP"/>
+                        <viewControllerLayoutGuide type="bottom" id="vEA-O4-5aZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M3L-A7-Mr6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKu-sE-19g">
+                                <rect key="frame" x="20" y="58" width="565" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="58" width="252" height="30"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="58" width="311" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-S8-io8">
+                                <rect key="frame" x="20" y="96" width="35" height="30"/>
+                                <state key="normal" title="Load">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoad_Clicked" destination="Xxp-Py-8wZ" eventType="touchUpInside" id="ZId-nB-F01"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEu-Xm-xgX">
+                                <rect key="frame" x="20" y="20" width="565" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="252" height="30"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="311" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra3-6J-5eI">
+                                <rect key="frame" x="546" y="96" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="238" y="96" width="34" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="199" y="96" width="34" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="btnSave_Clicked" destination="Xxp-Py-8wZ" eventType="touchUpInside" id="Fwg-Pf-GUK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QKu-sE-19g" secondAttribute="trailing" constant="15" id="22a-cu-Oq7"/>
+                            <constraint firstItem="ZYq-S8-io8" firstAttribute="leading" secondItem="M3L-A7-Mr6" secondAttribute="leading" constant="20" id="55r-Ug-6Jg"/>
+                            <constraint firstAttribute="trailing" secondItem="YEu-Xm-xgX" secondAttribute="trailing" constant="15" id="K2B-iw-Ove"/>
+                            <constraint firstAttribute="trailing" secondItem="Ra3-6J-5eI" secondAttribute="trailing" constant="20" id="Xwq-yK-28D"/>
+                            <constraint firstItem="QKu-sE-19g" firstAttribute="leading" secondItem="M3L-A7-Mr6" secondAttribute="leading" constant="20" id="f6U-Uc-kkU"/>
+                            <constraint firstItem="YEu-Xm-xgX" firstAttribute="leading" secondItem="M3L-A7-Mr6" secondAttribute="leading" constant="20" id="gRP-NL-hxr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtPassword" destination="QKu-sE-19g" id="Kbu-jG-wBB"/>
+                        <outlet property="txtUserName" destination="YEu-Xm-xgX" id="7Jb-Xv-4WM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xgq-1j-nUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="507"/>
+        </scene>
+    </scenes>
+</document>
