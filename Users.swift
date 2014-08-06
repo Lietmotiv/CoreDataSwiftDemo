@@ -15,10 +15,7 @@ class Users: NSManagedObject {
     @NSManaged var username: String;
     @NSManaged var password: String;
     
-    func toString() -> String{
-        return "The username is \(username)";
-        
-    }
+
     
     
 }

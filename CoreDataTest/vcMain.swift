@@ -29,8 +29,9 @@ class vcMain: UIViewController {
         
         context.save(nil);
         
-        println(newUsers);
-        println("Object Created");
+        //Debug Print
+        //println(newUsers);
+        //println("Object Created");
         
         
         
@@ -51,7 +52,8 @@ class vcMain: UIViewController {
             println("results found");
             for user in results{
                 var thisUser = user as Users;
-                println("The Username = \(thisUser.username) and pw = \(thisUser.password)")
+                //Debug Print
+                //println("The Username = \(thisUser.username) and pw = \(thisUser.password)")
                 txtUserName.text = thisUser.username;
                 txtPassword.text = thisUser.password;
                 
@@ -59,7 +61,8 @@ class vcMain: UIViewController {
             }
             
         }else{
-            println("nada");
+            //Debug Print
+            //println("nada");
             
             
         }
